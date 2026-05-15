@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Earthy Green & Millet-Themed Colors -->
+    <color name="primary_earthy_green">#6B8E23</color>
+    <color name="primary_dark_green">#556B2F</color>
+    <color name="accent_millet_gold">#D4A574</color>
+    <color name="accent_millet_dark">#CD853F</color>
+    <color name="light_earthy_green">#9ACD32</color>
+    <color name="warm_brown">#8B7355</color>
+    <color name="cream_white">#FFFDD0</color>
+    
+    <!-- Standard colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

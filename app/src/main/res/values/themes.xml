@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SiriDhanyaHubConnect" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_earthy_green</item>
+        <item name="colorPrimaryVariant">@color/primary_dark_green</item>
+        <item name="colorSecondary">@color/accent_millet_gold</item>
+        <item name="colorSecondaryVariant">@color/accent_millet_dark</item>
+        <item name="colorError">@android:color/holo_red_dark</item>
+        <item name="colorSurface">@color/cream_white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnError">@color/white</item>
+        <item name="colorOnSurface">@color/black</item>
+    </style>
+</resources>

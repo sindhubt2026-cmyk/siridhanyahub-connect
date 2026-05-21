@@ -91,3 +91,10 @@ https://6a042e1d2afe8349b4b6097f.mockapi.io/api/prices
 ## 📸 Application Screenshots
 
 ### Splash Screen
+---
+
+<p align="center">
+  💻 Developed with dedication by <b>Sindhu </b>
+</p>
+
+---

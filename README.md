@@ -1,100 +1,73 @@
-# 🌾 SiriDhanyaHub Connect
+# SiriDhanyaHub
 
-<p align="center">
-  <b>Ancient Grains for a Healthy Future</b>
-</p>
+SiriDhanyaHub is an Android application developed using Kotlin and Jetpack Compose to promote healthy millet-based lifestyles.
 
-<p align="center">
-  Android Application built using Kotlin & Jetpack Compose
-</p>
+## Features
 
----
+- Healthy millet recipes
+- Nutritional and health benefits
+- Millet market price tracking
+- Direct millet product purchase section
+- Information about different millets
+- Simple and user-friendly UI
 
-## 📖 About The Project
+## Technologies Used
 
-SiriDhanyaHub Connect is a modern Android application developed to promote awareness about millets, healthy food habits, and smart agricultural support systems.
+- Kotlin
+- Android Studio
+- Jetpack Compose
+- Material Design
 
-The application provides users with:
-- 🌾 Information about different millets and their benefits
-- 📈 Live millet market prices
-- 🍲 Healthy millet recipes with detailed instructions
-- 💪 Nutritional & health benefits information
-- 🛒 Direct millet product purchase support
-- 📊 Mandi Watch for market tracking
-- 🔐 Secure user authentication
+## Screens Included
 
----
+- Splash Screen
+- Home Screen                                                                                                                                                                                                - Recipe Screen
+- Recipe Details Screen
+- Health Benefits Screen
+- Mandi Watch Screen
+- Direct Buy Screen
+- About Millets Screen
 
-## ✨ Features
+## Purpose of the Project
 
-### 🎨 Modern UI
-- Jetpack Compose-based UI
-- Smooth animations and transitions
-- Material Design 3 components
+The project was developed to create awareness about the nutritional importance of millets and provide users with easy access to millet recipes, health information, and product details through a mobile application.
 
-### 📱 Screens
-- **Splash Screen** - Beautiful app introduction
-- **Home Screen** - Feature grid with quick navigation
-- **About Millets** - Educational content about different millets
-- **Recipe Screen** - Healthy millet recipes
-- **Recipe Details** - Detailed recipe instructions
-- **Health Benefits** - Nutritional information
-- **Mandi Watch** - Real-time market tracking
-- **Direct Buy** - Millet product browsing
-- **Market Prices** - Live price updates
+## Developer
 
-### 🔐 Authentication System
-- User Registration
-- Secure Login
-- Logout Functionality
-
-### 📈 Live Market Prices
-- Real-time millet market price updates
-- API integration using Retrofit
-- RecyclerView implementation
-
-### 🍲 Millet Recipes
-- Healthy traditional millet recipes
-- Detailed recipe cards with instructions
-
-### 💪 Health Benefits
-- Nutritional information
-- Awareness about healthy food lifestyle
-
-### 🛒 Direct Buy
-- Millet product browsing support
-- Shopping interface
-
----
-
-## 🛠️ Tech Stack
-
-| Technology | Usage |
-|------------|-------|
-| Kotlin | Android Development |
-| Jetpack Compose | Modern UI Framework |
-| Navigation Compose | Screen Navigation |
-| Android Studio | IDE |
-| Retrofit | API Integration |
-| Material Design 3 | UI Components |
-| MockAPI | Cloud API |
-| Coroutines | Async Programming |
-
----
-
-## 🌐 API Used
-
-https://6a042e1d2afe8349b4b6097f.mockapi.io/api/prices
-
----
-
-## 📸 Application Screenshots
+Sindhu Shree M
+## Application Screenshots
 
 ### Splash Screen
----
+![Splash Screen](1P.jpeg)
+### Home Screen
+![Home Screen](2P.jpeg)
 
-<p align="center">
-  💻 Developed with dedication by <b>Sindhu </b>
-</p>
+### Recipe Screen
+![Recipe Screen](3P.jpeg)
 
----
+### Recipe Details Screen
+![Recipe Details](4P.jpeg)
+
+### Health Benefits Screen
+![Health Benefits](5P.jpeg)
+
+### Mandi Watch Screen
+![Mandi Watch](6P.jpeg)
+
+### Direct Buy Screen
+![Direct Buy](7P.jpeg)
+
+### About Millets Screen
+![About Millets](8P.jpeg)
+
+## Future Enhancements
+
+- AI-based millet recommendations
+- Real-time market price updates
+- Multilingual language support
+- Cloud database integration
+- Online purchasing system
+
+- ## Project Architecture
+
+The application follows a simple modular architecture using Jetpack Compose for UI development. Different screens are connected using Navigation Compose. Static data for recipes, health benefits, millet prices, and product details are managed locally within the application. The project structure improves code readability, navigation handling, and UI management.

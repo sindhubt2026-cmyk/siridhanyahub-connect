@@ -38,27 +38,24 @@ Sindhu Shree M
 ## Application Screenshots
 
 ### Splash Screen
+<img width="1067" height="1475" alt="image" src="https://github.com/user-attachments/assets/632c3915-0b7c-41bf-96ab-6adc8824c1c3" />
 
 ### Home Screen
+<img width="1086" height="1448" alt="image" src="https://github.com/user-attachments/assets/b428baf5-456d-44ef-bb08-58f0adafdb8c" />
 
 
 ### Recipe Screen
 <img width="1086" height="1448" alt="image" src="https://github.com/user-attachments/assets/1331f12f-7491-4427-becb-01475c047f01" />
 
-
-### Recipe Details Screen
-
-
 ### Health Benefits Screen
+<img width="1071" height="1469" alt="image" src="https://github.com/user-attachments/assets/d982c260-ae82-4965-9bb3-709fb095f461" />
 
 
 ### Mandi Watch Screen
+<img width="1086" height="1448" alt="image" src="https://github.com/user-attachments/assets/5d3e6804-89d4-4e06-b9d4-778bb9dd2f07" />
 
 
-### Direct Buy Screen
 
-
-### About Millets Screen
 
 ## Future Enhancements
 

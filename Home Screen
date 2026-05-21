@@ -1,0 +1,154 @@
+package com.siridhanyahub.ui.screens
+
+import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.grid.GridCells
+import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.*
+import androidx.compose.material3.*
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+
+data class FeatureItem(
+    val title: String,
+    val icon: ImageVector,
+    val description: String,
+    val color: Color
+)
+
+@Composable
+fun HomeScreen(onNavigate: (String) -> Unit) {
+    val features = listOf(
+        FeatureItem(
+            "Market Prices",
+            Icons.Default.ShoppingCart,
+            "Live millet prices",
+            Color(0xFFA67C52)
+        ),
+        FeatureItem(
+            "Recipes",
+            Icons.Default.Restaurant,
+            "Healthy millet recipes",
+            Color(0xFFB8956A)
+        ),
+        FeatureItem(
+            "Health Benefits",
+            Icons.Default.Favorite,
+            "Nutritional info",
+            Color(0xFFC9A86C)
+        ),
+        FeatureItem(
+            "Direct Buy",
+            Icons.Default.Store,
+            "Buy millet products",
+            Color(0xFF9A7856)
+        ),
+        FeatureItem(
+            "About Millets",
+            Icons.Default.Info,
+            "Millet information",
+            Color(0xFFB39D8B)
+        ),
+        FeatureItem(
+            "Mandi Watch",
+            Icons.Default.BarChart,
+            "Market tracking",
+            Color(0xFFA68A70)
+        )
+    )
+
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color(0xFFF5F1E8))
+            .padding(16.dp)
+    ) {
+        // Header
+        Text(
+            text = "🌾 SiriDhanyaHub",
+            style = TextStyle(
+                fontSize = 28.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color(0xFF6B4C2F)
+            ),
+            modifier = Modifier.padding(bottom = 8.dp)
+        )
+
+        Text(
+            text = "Ancient Grains for a Healthy Future",
+            style = TextStyle(
+                fontSize = 14.sp,
+                color = Color(0xFF8B6F47)
+            ),
+            modifier = Modifier.padding(bottom = 24.dp)
+        )
+
+        // Feature Grid
+        LazyVerticalGrid(
+            columns = GridCells.Fixed(2),
+            horizontalArrangement = Arrangement.spacedBy(12.dp),
+            verticalArrangement = Arrangement.spacedBy(12.dp)
+        ) {
+            items(features.size) { index ->
+                FeatureCard(
+                    feature = features[index],
+                    onClick = { onNavigate(features[index].title) }
+                )
+            }
+        }
+    }
+}
+
+@Composable
+fun FeatureCard(feature: FeatureItem, onClick: () -> Unit) {
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(150.dp)
+            .clickable(onClick = onClick),
+        shape = RoundedCornerShape(12.dp),
+        colors = CardDefaults.cardColors(containerColor = feature.color),
+        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(12.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Center
+        ) {
+            Icon(
+                imageVector = feature.icon,
+                contentDescription = feature.title,
+                modifier = Modifier.size(40.dp),
+                tint = Color.White
+            )
+            Spacer(modifier = Modifier.height(8.dp))
+            Text(
+                text = feature.title,
+                style = TextStyle(
+                    fontSize = 14.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.White
+                )
+            )
+            Text(
+                text = feature.description,
+                style = TextStyle(
+                    fontSize = 10.sp,
+                    color = Color.White.copy(alpha = 0.8f)
+                )
+            )
+        }
+    }
+}

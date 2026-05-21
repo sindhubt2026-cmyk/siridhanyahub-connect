@@ -1,0 +1,66 @@
+package com.siridhanyahub.ui.screens
+
+import androidx.compose.animation.core.*
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.*
+import androidx.compose.material3.Text
+import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.unit.sp
+import kotlinx.coroutines.delay
+
+@Composable
+fun SplashScreen(onSplashComplete: () -> Unit) {
+    val scale = remember { Animatable(0.5f) }
+    val alpha = remember { Animatable(0f) }
+
+    LaunchedEffect(Unit) {
+        scale.animateTo(
+            targetValue = 1f,
+            animationSpec = tween(durationMillis = 800, easing = EaseOutBounce)
+        )
+        alpha.animateTo(
+            targetValue = 1f,
+            animationSpec = tween(durationMillis = 500)
+        )
+        delay(2000)
+        onSplashComplete()
+    }
+
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color(0xFF6B4C2F)),
+        contentAlignment = Alignment.Center
+    ) {
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally,
+            modifier = Modifier
+                .graphicsLayer(scaleX = scale.value, scaleY = scale.value)
+                .alpha(alpha.value)
+        ) {
+            Text(
+                text = "🌾",
+                fontSize = 80.sp,
+                modifier = Modifier.padding(bottom = 16.dp)
+            )
+            Text(
+                text = "SiriDhanyaHub",
+                style = TextStyle(
+                    fontSize = 36.sp,
+                    color = Color.White
+                )
+            )
+            Text(
+                text = "Ancient Grains for a Healthy Future",
+                style = TextStyle(
+                    fontSize = 14.sp,
+                    color = Color(0xFFE6D4B5)
+                )
+            )
+        }
+    }
+}

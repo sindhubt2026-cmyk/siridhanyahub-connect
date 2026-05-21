@@ -5,172 +5,89 @@
 </p>
 
 <p align="center">
-  Android Application built using Kotlin & Android Studio
+  Android Application built using Kotlin & Jetpack Compose
 </p>
 
 ---
 
-# 📖 About The Project
+## 📖 About The Project
 
 SiriDhanyaHub Connect is a modern Android application developed to promote awareness about millets, healthy food habits, and smart agricultural support systems.
 
 The application provides users with:
-• Live millet market prices
-• Healthy millet recipes
-• Nutritional & health benefits
-• Direct millet product purchase support
-• Secure user authentication
-
-This project was developed as part of an academic internship/project work using Android development technologies and API integration concepts.
-
----
-
-# ✨ Features
-
-## 🔐 Authentication System
-• User Registration
-• Secure Login
-• Logout Functionality
-
-## 🏠 Home Dashboard
-• Clean and modern UI
-• User-friendly navigation
-
-## 📈 Live Market Prices
-• Real-time millet market price updates
-• API integration using Retrofit
-• RecyclerView implementation
-
-## 🍲 Millet Recipes
-• Healthy traditional millet recipes
-• Recipe display cards
-
-## 💪 Health Benefits
-• Nutritional information
-• Awareness about healthy food lifestyle
-
-## 🛒 Direct Buy
-• Millet product browsing support
-• Clean shopping interface
+- 🌾 Information about different millets and their benefits
+- 📈 Live millet market prices
+- 🍲 Healthy millet recipes with detailed instructions
+- 💪 Nutritional & health benefits information
+- 🛒 Direct millet product purchase support
+- 📊 Mandi Watch for market tracking
+- 🔐 Secure user authentication
 
 ---
 
-# 🛠️ Tech Stack
+## ✨ Features
+
+### 🎨 Modern UI
+- Jetpack Compose-based UI
+- Smooth animations and transitions
+- Material Design 3 components
+
+### 📱 Screens
+- **Splash Screen** - Beautiful app introduction
+- **Home Screen** - Feature grid with quick navigation
+- **About Millets** - Educational content about different millets
+- **Recipe Screen** - Healthy millet recipes
+- **Recipe Details** - Detailed recipe instructions
+- **Health Benefits** - Nutritional information
+- **Mandi Watch** - Real-time market tracking
+- **Direct Buy** - Millet product browsing
+- **Market Prices** - Live price updates
+
+### 🔐 Authentication System
+- User Registration
+- Secure Login
+- Logout Functionality
+
+### 📈 Live Market Prices
+- Real-time millet market price updates
+- API integration using Retrofit
+- RecyclerView implementation
+
+### 🍲 Millet Recipes
+- Healthy traditional millet recipes
+- Detailed recipe cards with instructions
+
+### 💪 Health Benefits
+- Nutritional information
+- Awareness about healthy food lifestyle
+
+### 🛒 Direct Buy
+- Millet product browsing support
+- Shopping interface
+
+---
+
+## 🛠️ Tech Stack
 
 | Technology | Usage |
 |------------|-------|
 | Kotlin | Android Development |
+| Jetpack Compose | Modern UI Framework |
+| Navigation Compose | Screen Navigation |
 | Android Studio | IDE |
-| XML | UI Design |
 | Retrofit | API Integration |
-| RecyclerView | Dynamic Lists |
+| Material Design 3 | UI Components |
 | MockAPI | Cloud API |
-| Material Design | UI Components |
+| Coroutines | Async Programming |
 
 ---
 
-# 🌐 API Used
+## 🌐 API Used
 
 https://6a042e1d2afe8349b4b6097f.mockapi.io/api/prices
 
 ---
 
-# 📂 Project Structure
+## 📸 Application Screenshots
 
----
-
-# 📸 Application Screenshots
-
-## 📝 Register Page
-
-<p align="center">
-  <img src="register.jpeg" width="250"/>
-</p>
-
----
-
-## 🔑 Login Page
-
-<p align="center">
-  <img src="login.jpeg" width="250"/>
-</p>
-
----
-
-## 🏠 Home Page
-
-<p align="center">
-  <img src="home.jpeg" width="250"/>
-</p>
-
----
-
-## 📈 Market Price Page
-
-<p align="center">
-  <img src="market.jpeg" width="250"/>
-</p>
-
----
-
-## 🍲 Recipe Page
-
-<p align="center">
-  <img src="recipe.jpeg" width="250"/>
-</p>
-
----
-
-## 💪 Health Benefits Page
-
-<p align="center">
-  <img src="healthbenefits.jpeg" width="250"/>
-</p>
-
----
-
-## 🛒 Direct Buy Page
-
-<p align="center">
-  <img src="directbuy.jpeg" width="250"/>
-</p>
-
----
-
-# 🚀 Key Highlights
-
-• Modern Android UI Design
-• Real-time API Fetching
-• RecyclerView Integration
-• Retrofit Networking
-• Material Design Components
-• User Authentication Flow
-• Responsive Layout Design
-• Fragment-Based Navigation
-
----
-
-# 🔮 Future Enhancements
-
-• Firebase Authentication
-• AI-based Millet Recommendations
-• Dark Mode Support
-• Multi-language Support
-• Online Payment Gateway
-• Farmer Marketplace Integration
-
----
-
-# 👨‍💻 Developed By
-
-## Sindhu
-
-Android Developer | Kotlin Enthusiast
-
----
-
-# ⭐ Support
-
-If you found this project useful, consider giving it a ⭐ on GitHub.
-
----
+### Splash Screen
